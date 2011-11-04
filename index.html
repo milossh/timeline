@@ -3,31 +3,18 @@
 <head>
     <title>Special Projects Timeline</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <script src="http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js?bundle=true" 
             type="text/javascript"></script>
     <script type="text/javascript" src="filter.js"></script>
     <script type="text/javascript" 
             src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="jquery.icalendar.js"></script>
+    <script type="text/javascript" src="projects-holder.js"></script>
     <script type="text/javascript">
 
     const ONEDAY = 1000 * 60 * 60 * 24;
     var tl;
-
-    var projects = { // {{{
-        'webifyme': 'Webify Me (Desktop)',
-        'spark': 'Spark (Mobile)',
-        'dstudio': 'MDN Demo Studio',
-        'webowonder': 'Web O\'Wonder (Demo Microsite)',
-        'markup': 'Mark Up (Desktop)',
-        'tparty': 'Twitter Party (Desktop)',
-        'joinmozilla': 'New \'Join Mozilla\' page on mozilla.org',
-        'syncacc': 'New Services account page',
-        'fbbadges': 'Facebook Badges',
-        'glow': 'Global Map a.k.a. Glow - the new download stats page',
-        'fbwebhero': 'Facebook Web Hero',
-        'sparkeol': 'Spark EOL (End of Life)',
-    } // }}}
 
     function convert(ical_obj) { // {{{
         var source = {
@@ -162,208 +149,6 @@
     } // }}}
 
     </script>
-
-    <style type="text/css"> /* {{{ */
-        @import "jquery.icalendar.css";
-
-        body {
-            padding: 10px;
-            font: 1em/1.3 "Helvetica";
-        }
-
-        h1 {
-            float: left;
-            margin: 20px 50px 20px 0;
-        }
-
-        #controls {
-            float: left;
-            margin: 30px 0 20px 0;
-        }
-
-        #controls div {
-            float: left;
-        }
-
-        #controls input {
-            width: 100px;
-            background: #ffb url('search-textbox.png') no-repeat 2px 50%;
-            padding-left: 15px;
-        }
-
-        #clear {
-            padding: 0;
-            margin: 0 0 5px;
-            width: 11px;
-            height: 1.7em;
-            border: 0;
-            overflow: hidden;
-            background: transparent url('searchfield-small-cancel.png') 
-            no-repeat 0px 0;
-        }
-
-        #clear:active {
-            background-position: -11px 0;
-        }
-
-        #help {
-            color: #666;
-            font-size: 10pt;
-            padding: 3pt 0 0 20px;
-        }
-
-        #timeline {
-            clear: both;
-            height: 600px;
-            border: 1px solid #aaa;
-        }
-
-        .timeline-event-tape {
-            font-size: 10pt;
-            color: #fff;
-            opacity: 1 !important;
-            padding: 2px 0 0 3px;
-        }
-
-        #footnotes {
-            color: #666;
-            margin: 2em 0 0 0;
-            font-size: 9pt;
-        }
-
-        /* {{{ webifyme */
-        .webifyme.timeline-event-tape::before {
-            content: "webifyme ";
-        }
-        .webifyme.timeline-event-tape, .small-webifyme {
-            background-color: #0073E6;
-        }
-        .webifyme.timeline-event-label {
-            color: #0073E6;
-        } /* }}} */
-
-        /* {{{ spark */
-        .spark.timeline-event-tape::before {
-            content: "spark ";
-        }
-        .spark.timeline-event-tape, .small-spark {
-            background-color: #6c0;
-        }
-        .spark.timeline-event-label {
-            color: #6c0;
-        } /* }}} */
-
-        /* {{{ dstudio */
-        .dstudio.timeline-event-tape::before {
-            content: "dstudio ";
-        }
-        .dstudio.timeline-event-tape, .small-dstudio {
-            background-color: #FF0000;
-        }
-        .dstudio.timeline-event-label {
-            color: #FF0000;
-        } /* }}} */
-
-        /* {{{ webowonder */
-        .webowonder.timeline-event-tape::before {
-            content: "webowonder ";
-        }
-        .webowonder.timeline-event-tape, .small-webowonder {
-            background-color: #FF8000;
-        }
-        .webowonder.timeline-event-label {
-            color: #FF8000;
-        } /* }}} */
-
-        /* {{{ markup */
-        .markup.timeline-event-tape::before {
-            content: "markup ";
-        }
-        .markup.timeline-event-tape, .small-markup {
-            background-color: #ADD6FF;
-        }
-        .markup.timeline-event-label {
-            color: #ADD6FF;
-        } /* }}} */
-
-        /* {{{ tparty */
-        .tparty.timeline-event-tape::before {
-            content: "tparty ";
-        }
-        .tparty.timeline-event-tape, .small-tparty {
-            background-color: #61B0FF;
-        }
-        .tparty.timeline-event-label {
-            color: #61B0FF;
-        } /* }}} */
-
-        /* {{{ joinmozilla */
-        .joinmozilla.timeline-event-tape::before {
-            content: "joinmozilla ";
-        }
-        .joinmozilla.timeline-event-tape, .small-joinmozilla {
-            background-color: #E60073;
-        }
-        .joinmozilla.timeline-event-label {
-            color: #E60073;
-        } /* }}} */
-
-        /* {{{ syncacc */
-        .syncacc.timeline-event-tape::before {
-            content: "syncacc ";
-        }
-        .syncacc.timeline-event-tape, .small-syncacc {
-            background-color: #7300E6;
-        }
-        .syncacc.timeline-event-label {
-            color: #7300E6;
-        } /* }}} */
-
-        /* {{{ fbbadges */
-        .fbbadges.timeline-event-tape::before {
-            content: "fbbadges ";
-        }
-        .fbbadges.timeline-event-tape, .small-fbbadges {
-            background-color: #EDC309;
-        }
-        .fbbadges.timeline-event-label {
-            color: #EDC309;
-        } /* }}} */
-
-        /* {{{ fbwebhero */
-        .fbwebhero.timeline-event-tape::before {
-            content: "fbwebhero ";
-        }
-        .fbwebhero.timeline-event-tape, .small-fbwebhero {
-            background-color: #EDC309;
-        }
-        .fbwebhero.timeline-event-label {
-            color: #EDC309;
-        } /* }}} */
-
-        /* {{{ glow */
-        .glow.timeline-event-tape::before {
-            content: "glow ";
-        }
-        .glow.timeline-event-tape, .small-glow {
-            background-color: #4c9900;
-        }
-        .glow.timeline-event-label {
-            color: #4c9900;
-        } /* }}} */
-
-        /* {{{ sparkeol */
-        .sparkeol.timeline-event-tape::before {
-            content: "sparkeol ";
-        }
-        .sparkeol.timeline-event-tape, .small-sparkeol {
-            background-color: #6c0;
-        }
-        .sparkeol.timeline-event-label {
-            color: #6c0;
-        } /* }}} */
-
-        /* }}} */ </style> 
 
 </head>
 
