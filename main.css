@@ -66,14 +66,14 @@ h1 {
 	font-size: 9pt;
 }
 
-/* {{{ webifyme */
-.webifyme.timeline-event-tape::before {
-	content: "webifyme ";
+/* {{{ affiliates */
+.affiliates.timeline-event-tape::before {
+	content: "affiliates ";
 }
-.webifyme.timeline-event-tape, .small-webifyme {
+.affiliates.timeline-event-tape, .small-affiliates {
 	background-color: #0073E6;
 }
-.webifyme.timeline-event-label {
+.affiliates.timeline-event-label {
 	color: #0073E6;
 } /* }}} */
 
