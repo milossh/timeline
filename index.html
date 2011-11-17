@@ -126,7 +126,7 @@
             var ical_obj = $.icalendar.parse(data);
             var simile_obj = convert(ical_obj);
             eventSource.loadJSON(simile_obj,
-                                 'http://l10n.mozilla.org/~stas/fx4special/');
+                                 'http://l10n.mozilla.org/~milos/l10n-calendar/');
             getFilter();
         });
         setupFilterHighlightControls($("#controls")[0], tl, [0,1], theme);
