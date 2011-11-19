@@ -88,6 +88,17 @@ h1 {
 	color: #0073E6;
 } /* }}} */
 
+/* {{{ firefox-product */
+.firefox.timeline-event-tape::before {
+	content: "Firefox ";
+}
+.firefox.timeline-event-tape, .small-affiliates {
+	background-color: #ADD6FF;
+}
+.firefox.timeline-event-label {
+	color: #0073E6;
+} /* }}} */
+
 /* {{{ spark */
 .spark.timeline-event-tape::before {
 	content: "spark ";

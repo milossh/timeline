@@ -13,4 +13,5 @@ var projects = { // {{{
     'sparkeol': 'Spark EOL (End of Life)',
     'affiliates': 'Affiliates program website',
     'mozillians': 'Mozillians Directory',
+    'firefox': 'Firefox localization',
 } // }}}
