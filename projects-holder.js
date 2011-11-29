@@ -14,4 +14,6 @@ var projects = { // {{{
     'affiliates': 'Affiliates program website',
     'mozillians': 'Mozillians Directory',
     'firefox': 'Firefox localization',
+    'thunderbird': 'Thunderbird localization',
+    'calendar' : 'Calendar project(Lightning)',
 } // }}}

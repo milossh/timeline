@@ -97,11 +97,37 @@ h1 {
 	content: "Firefox";
 }
 .firefox.timeline-event-tape, .small-firefox {
-	background-color: #ADD6FF;
+	background-color: #ed6a18;
   padding: 0 5px;
   width: auto !important;
 }
 .firefox.timeline-event-label {
+	color: #0073E6;
+} /* }}} */
+
+/* {{{ thunderbird-product */
+.thunderbird.timeline-event-tape::before {
+	content: "Thunderbird";
+}
+.thunderbird.timeline-event-tape, .small-thunderbird {
+	background-color: #0e2278;
+  padding: 0 5px;
+  width: auto !important;
+}
+.thunderbird.timeline-event-label {
+	color: #0073E6;
+} /* }}} */
+
+/* {{{ calendar-product */
+.calendar.timeline-event-tape::before {
+	content: "Calendar(Lightning)";
+}
+.calendar.timeline-event-tape, .small-calendar {
+	background-color: #1b7043;
+  padding: 0 5px;
+  width: auto !important;
+}
+.calendar.timeline-event-label {
 	color: #0073E6;
 } /* }}} */
 
