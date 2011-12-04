@@ -16,4 +16,5 @@ var projects = { // {{{
     'firefox': 'Firefox localization',
     'thunderbird': 'Thunderbird localization',
     'calendar' : 'Calendar project(Lightning)',
+    'seamonkey' : 'Seamonkey project',
 } // }}}

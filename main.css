@@ -131,6 +131,19 @@ h1 {
 	color: #0073E6;
 } /* }}} */
 
+/* {{{ seamonkey-product */
+.seamonkey.timeline-event-tape::before {
+	content: "Seamonkey";
+}
+.seamonkey.timeline-event-tape, .small-seamonkey {
+	background-color: #4242a6;
+  padding: 0 5px;
+  width: auto !important;
+}
+.seamonkey.timeline-event-label {
+	color: #0073E6;
+} /* }}} */
+
 /* {{{ spark */
 .spark.timeline-event-tape::before {
 	content: "spark ";
